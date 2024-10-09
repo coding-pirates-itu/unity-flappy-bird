@@ -56,10 +56,10 @@ Source: https://www.youtube.com/watch?v=XtQMytORBmM
    a) Destroy the pipe if `X` is less than something.
 
 8. Score.
-   a) Create UI -> Text. Set _Canvas Scaler_ -> _UI Scale Mode_ to _Scale with screen size_. Set _Reference Resolution_ to HD.
+   a) Create UI -> Text. On _Canvas_ object set _Canvas Scaler_ -> _UI Scale Mode_ to _Scale with screen size_. Set _Reference Resolution_ to HD.
    b) Adjust the text. Do not use _Scale_ but size. Set default text to `0`.
    c) _Hierarchy_ -> _Create Empty_, name `Logic`.
-   d) Add a _Script machine_ component. Variables: `int Score`, `UnityEngine.UI.Text Text`. Implement the event.
+   d) Add a _Script machine_ component. Variables: `int Score`, `UnityEngine.UI.Text Text`. Implement the custom event.
    e) Drag _Text_ from _Hierarchy_ to the variable.
    f) Add an empty object to the _Pipe_ prefab. Add _Box Collider 2D_, set _Is Trigger_.
    g) Add _Script machine_. Add a variable for the logic component.
